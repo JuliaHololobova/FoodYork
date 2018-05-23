@@ -1,0 +1,6 @@
+[2018-05-10 14:59:35] layer "resipes_foto2.gpg": Unsupported extension: gpg
+[2018-05-10 14:59:35] layer "down-arrow-2_icon-icons.com_70191": Expected end of input but "_" found.
+[2018-05-10 14:59:35] layer "down-arrow-2_icon-icons.com_70191": Expected end of input but "_" found.
+[2018-05-10 14:59:35] layer "down-arrow-2_icon-icons.com_70191": Expected end of input but "_" found.
+[2018-05-10 14:59:35] layer "down-arrow-2_icon-icons.com_70191": Expected end of input but "_" found.
+[2018-05-10 14:59:35] layer "down-arrow-2_icon-icons.com_70191": Expected end of input but "_" found.
