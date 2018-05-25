@@ -16,7 +16,12 @@
                 <a href="#"></a>
             </div>    
             <nav>
-                <ul class="nav">
+                <div class="mobileMenu" onclick="toggleClass()">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="menu">
                     <li><a href="#">РЕЦЕПТЫ</a></li>
                     <li><a href="#">ПРОДУКТЫ</a></li>
                     <li><a href="#">КАК ПРИГОТОВИТЬ</a></li>
@@ -24,10 +29,11 @@
                     <li><a href="#">ЗДОРОВЬЕ</a></li>
                     <li><a href="#">АВТОРЫ</a></li>
                 </ul>
+                
             </nav>
             <div class="lang"><a href="#">ru</a><a href="#">en</a></div>
             <div class="socialIcon">
-                <a href="#"></i><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
@@ -56,64 +62,92 @@
                 <section class="news">
                     <div class="row">
                         <div class="col-2">
-                            <div id="foto1"><div class="text">
-                                <p class="category">БЛЮДО ДНЯ</p>
-                                <p class="category_name">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</p>
-                            </div></div>
+                            <a href="#" class="news__item" >
+                                <div class="news__image">
+                                    <img src="../dist/img/foto1.jpg" width="543" height="409" alt="" title=""/>
+                                </div>
+                                <div class="news__text">
+                                    <p class="category">БЛЮДО ДНЯ</p>
+                                    <p class="category_name">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-2">
-                            <div id="foto2"><div class="text">
-                                <p class="category">ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ</p>
-                                <p class="category_name">7 ЛУЧШИХ РЕЦЕПТОВ НЕДЕЛИ</p>
-                            </div></div>
+                            <a href="#" class="news__item" >
+                                <div class="news__image">
+                                    <img src="../dist/img/foto2.jpg" width="543" height="409" alt="" title=""/>
+                                </div>
+                                <div class="news__text">
+                                    <p class="category">ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ</p>
+                                    <p class="category_name">7 ЛУЧШИХ РЕЦЕПТОВ НЕДЕЛИ</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-2">
-                            <div id="foto3">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto3.jpg" width="543" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</p>
+                                    </div>
+                                </a>
                         </div>
                         <div class="col-1">
-                            <div id="foto4">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ  С ОВОЩАМИ</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto4.jpg" width="267" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ  С ОВОЩАМИ</p>
+                                    </div>
+                                </a>
                         </div>
                         <div class="col-1">
-                            <div id="foto5">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto5.jpg" width="267" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</p>
+                                    </div>
+                                </a>
                         </div>
                         <div class="col-1">
-                            <div id="foto6">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">ЧТО ТАКОЕ МЕД ?</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto6.jpg" width="267" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">ЧТО ТАКОЕ МЕД?</p>
+                                    </div>
+                                </a>
                         </div>
                         <div class="col-1">
-                            <div id="foto7">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ  ТЕСТО</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto7.jpg" width="267" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ  ТЕСТО</p>
+                                    </div>
+                                </a>
                         </div>
                         <div class="col-2">
-                            <div id="foto8">
-                                <div class="title">
-                                    <div class="black_border"></div>
-                                    <p class="title_item">ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</p>
-                                </div>
-                            </div>
+                                <a href="#" class="news__item" >
+                                    <div class="news__image">
+                                        <img src="../dist/img/foto8.jpg" width="543" height="267" alt="" title=""/>
+                                    </div>
+                                    <div class="title">
+                                        <div class="black_border"></div>
+                                        <p class="title_item">ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</p>
+                                    </div>
+                                </a>
                         </div>
                     </div>
                 </section>
@@ -383,5 +417,29 @@
         </div>
     </div>
     <script src="../dist/js/app.js"></script>
+    <script>
+        let menu = document.getElementsByClassName('menu')[0];
+        function toggleClass(){
+            if(menu.className === "menu"){
+                menu.className += " show";
+            }else{
+                menu.className = "menu";
+            }
+
+
+    // let icon = document.getElementsByClassName('icon')[0];
+    // let nav = document.getElementsByClassName('nav')[0];
+    // icon.style.display = "none";
+    // nav.style.display = "block";
+    
+}
+function hideMenu(){
+    // let nav = document.getElementsByClassName('nav')[0];
+    // let icon = document.getElementsByClassName('icon')[0];
+    // nav.style.display = "none";
+    // icon.style.display = "block";
+}
+
+    </script>
 </body>
 </html>
