@@ -263,6 +263,9 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 -5.5px;
+    // @media screen and(max-width: 767px){
+    //     justify-content: center;
+    // }
     .col-1, .col-2{
         margin: 5.5px 0 0 5.5px;
         
@@ -290,18 +293,21 @@ h2{
 .news__item{
     text-decoration: none;
     display: block;
+    position: relative;
 }
 .news__image{
     width: 100%;
     img{
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
 
 .news__text{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 0;
     background: url('../img/spoon&forg.png') center bottom no-repeat;
     color: #ffffff;
@@ -326,9 +332,10 @@ h2{
 }
 .title{
     position: absolute;
-    top: 14px;
-    left: 13px;
+    top: 0;
+    left: 0;
     display: inline-block;
+    margin: 5% 13%;
    
     .black_border{
         max-width: 156px;
@@ -354,18 +361,23 @@ h2{
     padding-bottom: 60px;
 
 }
-
-    .resipes_nav{
+@media screen and(min-width: 768px){
+    div.resipes_nav{
+        width: 60%;
         border-radius: 18px;
         background-color: #f1f1f1;
         margin: 15px auto;
-        display: inline-block;
-        margin-left: 32%;
-       
+        display: block;
+        text-align: center;
+        &:hover{
+            background-color: transparent;
+        }
+    
+        
         
             .btn{
                 border-radius: 18px;
-                width: calc(100%/10-5px);
+                width: calc(100%/3 - 5px);
                 display: inline-block;
                 height: 35px;
                 padding: 10px 26px;
@@ -379,42 +391,67 @@ h2{
                     background-color: #2f3032;
                     color: #f1f1f1;
                     cursor: pointer;
-
                 }
+                
             }
-        }
+    }
+}
+@media screen and(max-width: 767px){
+    div.resipes_nav{
+        width: 40%;
+        margin: 0 auto;
+        .btn{
+            border-radius: 18px;
+            margin: 5px auto;
+            width: 100%;
+            display: inline-block;
+            height: 35px;
+            padding: 10px 26px;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-align: center;
+            background-color:  #f1f1f1;
+            color: #5b5b5b;
+            transition-duration: 0.4s;
+            overflow: hidden;
+            &:hover{
+                background-color: #2f3032;
+                color: #f1f1f1;
+                cursor: pointer;
+            }
+        }    
+        
+    }
+    
+}
 
 .resipesItem {
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
     
     &__image{
-        
         width: 50%;
         position: relative;
         text-decoration: none;
         cursor: auto;
-        flex: 1 1 50%;
-        @media screen and(max-width: 767px){
+        flex: 1 1 255px;
+        @media screen and (max-width: 767px){
             width: 100%;
-            
-            
         }
         img{
             max-width: 100%;
             height: auto;
-            @media screen and(max-width: 767px){
-                text-align: center;
-                margin: 0 auto;
-                display: block;
-            }
-
-           
+            display: block;
+            text-align: center;
+            margin: 0 auto;
         }
         .author{
             position: absolute;
-            bottom: 14px;
-            left: 20%;
+            top: 80%;
+            left: 50%;
             &__foto{
                
                 & img{
@@ -422,7 +459,6 @@ h2{
                     box-sizing: border-box;
                     border: 2px solid #2f3032;
                     border-radius: 50%;
-                    
                 }
             }
             &__name{
@@ -430,7 +466,6 @@ h2{
                 align-self: center;
                 & p{
                     color: #fcfcfc;
-                    
                 }
             }
         }
@@ -444,18 +479,17 @@ h2{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        flex: 1 1 50%;
+        flex: 1 1 255px;
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
         &-title {
             width: 90%;
             margin: 18px auto 0 18px;
             & h3.dsc-title{
             color: #3d3d3d;
             font-size: $fz*1.5;
-            // margin: 18px auto;
-            // text-decoration: none!important;
-            // outline: none!important;
             text-align: center;
-            // text-emphasis: transparent!important;
             }
 
         }
