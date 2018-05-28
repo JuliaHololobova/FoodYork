@@ -22,9 +22,7 @@ $ffPoppins: Poppins;
   font-weight: normal;
   font-style: normal; 
 }
-*|*:any-link{
-    text-decoration: none;
-}
+
 
 html{
     font-family: $ffPFDin;
@@ -40,7 +38,7 @@ html{
   
 }
 //Sidebar Menu
-menu{
+.menuWrapper{
     width: 13%;
     background-color: #2f3032;
     @media screen and(max-width: 767px){
@@ -499,7 +497,7 @@ h2{
             justify-content: space-between;
             
             & .btn{
-                width: calc(100%/3-5.5px);
+                
                 border: 1px solid  #f2f2f2;
                 border-radius: 12px;
                 color:  #b5904e;
@@ -534,7 +532,7 @@ h2{
             flex-wrap: nowrap;
             justify-content: space-between;
             .socIc{
-                width: calc(100%/2-5.5px);
+                width: calc(100%/2 - 5.5px);
                 & a{
                         // display: inline-block; 
                         font-size: 14px;
